@@ -12,6 +12,18 @@ dependencies = [
     "langchain-groq>=0.3.2",
     "langchain-openai>=0.3.22",
     "langgraph>=0.4.8",
+    "make>=0.1.6.post2",
     "streamlit>=1.45.1",
     "tavily-python>=0.7.5",
+]
+
+[tool.uv.workspace]
+members = [
+    "src",
+    "src/graphs",
+    "src/nodes",
+    "src/llms",
+    "src/state",
+    "src/frontend",
+    "src/tools",
 ]
