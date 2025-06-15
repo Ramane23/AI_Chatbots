@@ -41,6 +41,9 @@ class LoadStreamlitUI:
 
         # Display the main header with a robot emoji and page title
         st.header("🤖 " + self.config.get_page_title())
+        
+        st.session_state.timeframe = ''
+        st.session_state.IsFetchButtonClicked = False
 
         # Sidebar block for user input controls
         with st.sidebar:
@@ -67,7 +70,7 @@ class LoadStreamlitUI:
             # Dropdown menu for selecting use cases
             self.user_controls["selected_usecase"] = st.selectbox("Select Usecases", usecase_options)
             
-            if self.user_controls["selected_usecase"] =="Chatbot With Web":
+            if self.user_controls["selected_usecase"] =="Chatbot With Web" or self.user_controls["selected_usecase"] =="AI News" :
                 os.environ["TAVILY_API_KEY"]=self.user_controls["TAVILY_API_KEY"]=st.session_state["TAVILY_API_KEY"]=st.text_input("TAVILY API KEY",type="password")
 
                 # Validate API key

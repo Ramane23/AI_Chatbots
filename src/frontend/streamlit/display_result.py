@@ -81,7 +81,8 @@ class DisplayResultStreamlit:
         elif usecase == "AI News":
             frequency = self.user_message
             with st.spinner("Fetching and summarizing news... ⏳"):
-                result = graph.invoke({"messages": frequency})
+                #result = graph.invoke({"messages": frequency})
+                graph.invoke({"messages": frequency})
                 try:
                     # Read the markdown file
                     AI_NEWS_PATH = f"./AINews/{frequency.lower()}_summary.md"
