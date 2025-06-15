@@ -34,12 +34,12 @@ An advanced agent that fetches the latest AI in aviation-related news, summarize
     🔁 Modular agent loop for refreshable insights
 
 ⚙️ Technologies Used
-LangChain – LLM operations & chains
-
-LangGraph – Agentic workflows
-
-Streamlit – Interactive frontend
-
-Groq LLMs – Sub-millisecond inference for blazing-fast response times
+    LangChain – LLM operations & chains
+    
+    LangGraph – Agentic workflows
+    
+    Streamlit – Interactive frontend
+    
+    Groq LLMs – Sub-millisecond inference for blazing-fast response times
 
 
