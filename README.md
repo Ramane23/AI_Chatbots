@@ -72,6 +72,10 @@ TAVILY_API_KEY=your_news_api_key
 streamlit run app.py
 ```
 
+## 🖥 Final UI Preview
 
+Here’s how the final app looks when running locally in Streamlit:
+
+![AI Chatbots UI](https://githubimagesbucket.s3.us-east-1.amazonaws.com/AI_Chatbots_ui.PNG)
 
 
