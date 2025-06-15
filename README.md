@@ -2,7 +2,8 @@
 
 This project showcases three modular AI chatbot systems built using **LangChain**, **LangGraph**, **Streamlit**, and **Groq-provided LLMs**, all managed in a modern `uv` Python workspace using `pyproject.toml`.
 
-![Modular Agentic AI Chatbots](./cb762be9-b5c2-44ac-b0ad-c84e8cae452d.png)
+![Modular Agentic AI Chatbots](https://githubimagesbucket.s3.us-east-1.amazonaws.com/AI_chatbots.PNG)
+
 
 ---
 
@@ -18,7 +19,7 @@ A foundational chatbot powered by Groq-hosted LLMs. Handles simple conversationa
 ---
 
 ### 2. **Chatbot with Tools**
-A more advanced chatbot that uses LangGraph to decide when to call external tools (e.g., calculator, search) based on the user's input.
+A more advanced chatbot that uses LangGraph to decide when to call external tools (Tavily web search tool) based on the user's input.
 
 - 🛠 Tool-based reasoning
 - 🔄 Groq + LangGraph orchestration
@@ -54,7 +55,22 @@ An agent pipeline that fetches real-time **AI in aviation** news via an API, sum
 ```bash
 git clone https://github.com/your-username/agentic-chatbots.git
 cd agentic-chatbots
-
+```
+### 2.  Install dependencies using uv
+```bash
+uv venv
+source .venv/bin/activate
+```
+### 3. Set environment variables
+Create a .env file in the root directory:
+```env
+GROQ_API_KEY=your_groq_api_key
+TAVILY_API_KEY=your_news_api_key
+```
+### 4. Run the Streamlit app
+```bash
+streamlit run app.py
+```
 
 
 
