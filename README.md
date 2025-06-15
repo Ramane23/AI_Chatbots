@@ -1,45 +1,61 @@
-🧠 Modular Agentic AI Chatbots
-This project showcases three modular AI chatbot systems built using LangChain, LangGraph, Streamlit, and Groq-provided LLMs. Each module demonstrates increasing levels of agentic reasoning and external tool integration.
+# 🧠 Modular Agentic AI Chatbots
 
-📦 Project Modules
-1. Basic Chatbot
-A foundational chatbot powered by Groq-hosted language models. It handles natural language conversation end-to-end with no external logic.
+This project showcases three modular AI chatbot systems built using **LangChain**, **LangGraph**, **Streamlit**, and **Groq-provided LLMs**, all managed in a modern `uv` Python workspace using `pyproject.toml`.
 
-    ✅ Ultra-fast responses with Groq
-    
-    🧠 Core LLM dialog
-    
-    🛠 No tools or APIs
+![Modular Agentic AI Chatbots](./cb762be9-b5c2-44ac-b0ad-c84e8cae452d.png)
 
-2. Chatbot with Tools
-An enhanced chatbot that uses LangGraph to dynamically call external tools (e.g., calculator, weather, or search) when needed.
+---
 
-    🧠 Groq LLM + Tools
-    
-    🔄 Decision-based tool usage
-    
-    ⚙️ Agent orchestration via LangGraph
+## 📦 Project Modules
 
-3. AI News Summarizer (AI in Aviation)
-An advanced agent that fetches the latest AI in aviation-related news, summarizes it using a Groq-powered LLM, and stores the result.
+### 1. **Basic Chatbot**
+A foundational chatbot powered by Groq-hosted LLMs. Handles simple conversational flows without external tools.
 
-    🌐 Live news fetching via API
-    
-    ✈️ Focus: AI trends in aviation
-    
-    🧠 LLM summarization with Groq
-    
-    💾 Local storage of summaries
-    
-    🔁 Modular agent loop for refreshable insights
+- ✅ Blazing-fast Groq inference
+- 💬 Dialog-only logic
+- 🧼 Clean, minimal setup
 
-⚙️ Technologies Used
-    LangChain – LLM operations & chains
-    
-    LangGraph – Agentic workflows
-    
-    Streamlit – Interactive frontend
-    
-    Groq LLMs – Sub-millisecond inference for blazing-fast response times
+---
+
+### 2. **Chatbot with Tools**
+A more advanced chatbot that uses LangGraph to decide when to call external tools (e.g., calculator, search) based on the user's input.
+
+- 🛠 Tool-based reasoning
+- 🔄 Groq + LangGraph orchestration
+- 🧠 Decision-based tool selection
+
+---
+
+### 3. **AI News Summarizer (AI in Aviation)**
+An agent pipeline that fetches real-time **AI in aviation** news via an API, summarizes the results using Groq, and stores the output.
+
+- ✈️ Domain-specific (AI in aviation)
+- 🌐 API-powered content fetching
+- 🧠 LLM summarization with Groq
+- 💾 Local result saving
+- 🔁 Continuous agentic loop
+
+---
+
+## ⚙️ Tech Stack
+
+- **LangChain** – LLM orchestration
+- **LangGraph** – Agent graph building
+- **Groq LLMs** – Ultra-low latency inference
+- **Streamlit** – UI interface
+- **uv + pyproject.toml** – Modern Python package & workspace management
+
+---
+
+## 🚀 Quickstart
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/agentic-chatbots.git
+cd agentic-chatbots
+
+
+
 
 
